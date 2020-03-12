@@ -1,0 +1,19 @@
+.dashboardStyling:hover {
+  background-color: CadetBlue;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.8);
+  transition: 0.7s;
+}
+
+.dashboardStyling:active {
+  opacity: 0.9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.otherMenusStyling:active {
+  opacity: 0.9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

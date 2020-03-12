@@ -1,0 +1,9 @@
+.addCardWidth {
+  width: 70%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .addCardWidth {
+    width: 100%;
+  }
+}
