@@ -36,7 +36,7 @@ require("./config/passport")(passport);
 
 app.use('/api', apiRoutes);
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 6000;
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'client/build')));
