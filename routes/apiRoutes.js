@@ -7,14 +7,15 @@ const keys = require("../config/keys");
 const validateLoginInput = require("../validation/login");
 const User = require("../models/User");
 require('dotenv').config();
+const Orders = require('../models/Order');
 
 const multer = require('multer');
 const multerS3 = require('multer-s3');
 const AWS = require('aws-sdk');
 
-let upload, s3;
+let upload, s3, storage;
 
-s3 = new AWS.S3({
+/* s3 = new AWS.S3({
     accessKeyId: process.env.ACCESS_KEY_ID,
     secretAccessKey: process.env.ACCESS_KEY,
     region: 'us-east-2'
@@ -29,7 +30,37 @@ upload = multer({
             cb(null, Date.now().toString())
         }
     })
-});
+}); */
+
+if (process.env.ACCESS_KEY_ID) {
+
+    s3 = new AWS.S3({
+        accessKeyId: process.env.ACCESS_KEY_ID,
+        secretAccessKey: process.env.ACCESS_KEY,
+        region: 'us-east-2'
+    });
+
+    upload = multer({
+        storage: multerS3({
+            s3: s3,
+            bucket: 'wheels-bucket',
+            acl: 'public-read-write',
+            key: function (req, file, cb) {
+                cb(null, Date.now().toString())
+            }
+        })
+    });
+} else {
+    storage = multer.diskStorage({
+        destination: function (req, file, cb) {
+            cb(null, 'client/public/uploads')
+        },
+        filename: function (req, file, cb) {
+            cb(null, file.fieldname + '-' + Date.now())
+        }
+    })
+    upload = multer({ storage: storage });
+}
 
 router.get('/menuItems', (req, res, next) => {
     MenuItem.find({}).then(data => res.json(data)).catch(next);
@@ -151,6 +182,8 @@ router.post("/login", (req, res) => {
     });
 });
 
-
+router.get('/getOrders', (req, res, next) => {
+    Orders.find({}).then(data => res.json(data)).catch(next);
+});
 
 module.exports = router;

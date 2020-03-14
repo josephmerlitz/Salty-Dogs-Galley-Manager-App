@@ -10,6 +10,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./components/Dashboard";
 import AddItemsForm from "./components/AddItemsForm";
 import EditItemsForm from "./components/EditItemsForm";
+import Orders from './components/Orders'
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -55,6 +56,7 @@ class App extends Component {
               <PrivateRoute exact path="/dashboard" component={() => (<Dashboard dashboardStyle={dashboardStyle} viewName="Dashboard" />)} />
               <PrivateRoute exact path="/add" component={AddItemsForm} />
               <PrivateRoute exact path="/edit" component={EditItemsForm} />
+              <PrivateRoute exact path="/orders" component={Orders} />
             </Switch>
           </div>
         </Router>

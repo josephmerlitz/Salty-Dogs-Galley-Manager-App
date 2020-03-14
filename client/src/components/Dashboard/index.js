@@ -22,6 +22,7 @@ class Dashboard extends Component {
         <div className="container" style={{ display: "flex", flexWrap: "wrap", marginTop: "20px", justifyContent: "center" }}>
           <Link className="btn dashboardStyling" style={this.props.dashboardStyle} to="/add"><i className="fa fa-plus"></i></Link>
           <Link className="btn dashboardStyling" style={this.props.dashboardStyle} to="/edit"><i className="fa fa-edit"></i></Link>
+          <Link className="btn dashboardStyling" style={this.props.dashboardStyle} to="/orders"><i className="fa fa-book"></i></Link>
           <button style={this.props.dashboardStyle} onClick={this.onLogoutClick} className="btn dashboardStyling"><i className="fa fa-sign-out"></i></button>
         </div >
       )
@@ -29,6 +30,7 @@ class Dashboard extends Component {
       displayMenu = (
         <div className="container" style={{ display: "flex", flexWrap: "wrap", marginTop: "20px", justifyContent: "center" }}>
           <Link className="btn otherMenusStyling" style={this.props.dashboardStyle} to="/edit"><i className="fa fa-edit"></i></Link>
+          <Link className="btn otherMenusStyling" style={this.props.dashboardStyle} to="/orders"><i className="fa fa-book"></i></Link>
           <button style={this.props.dashboardStyle} onClick={this.onLogoutClick} className="btn otherMenusStyling"><i className="fa fa-sign-out"></i></button>
         </div >
       )
@@ -36,6 +38,15 @@ class Dashboard extends Component {
       displayMenu = (
         <div className="container" style={{ display: "flex", flexWrap: "wrap", marginTop: "20px", justifyContent: "center" }}>
           <Link className="btn otherMenusStyling" style={this.props.dashboardStyle} to="/add"><i className="fa fa-plus"></i></Link>
+          <Link className="btn otherMenusStyling" style={this.props.dashboardStyle} to="/orders"><i className="fa fa-book"></i></Link>
+          <button style={this.props.dashboardStyle} onClick={this.onLogoutClick} className="btn otherMenusStyling"><i className="fa fa-sign-out"></i></button>
+        </div >
+      )
+    } else if (this.props.viewName && this.props.viewName === "Orders") {
+      displayMenu = (
+        <div className="container" style={{ display: "flex", flexWrap: "wrap", marginTop: "20px", justifyContent: "center" }}>
+          <Link className="btn otherMenusStyling" style={this.props.dashboardStyle} to="/add"><i className="fa fa-plus"></i></Link>
+          <Link className="btn otherMenusStyling" style={this.props.dashboardStyle} to="/edit"><i className="fa fa-edit"></i></Link>
           <button style={this.props.dashboardStyle} onClick={this.onLogoutClick} className="btn otherMenusStyling"><i className="fa fa-sign-out"></i></button>
         </div >
       )
