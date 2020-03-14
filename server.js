@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 const apiRoutes = require('./routes/apiRoutes');
 require('dotenv').config();
+const path = require('path');
 
 const app = express();
 
