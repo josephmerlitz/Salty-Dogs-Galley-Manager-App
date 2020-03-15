@@ -1,0 +1,75 @@
+.indigo-card {
+  background-color: antiquewhite;
+  padding-left: 20px;
+  border: 1px lightgrey solid;
+  border-left: 6px indigo solid !important;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.indigo-card h6 {
+  color: indigo;
+}
+
+.red-card {
+  background-color: antiquewhite;
+  padding-left: 20px;
+  border: 1px lightgrey solid;
+  border-left: 6px red solid !important;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.red-card h6 {
+  color: red;
+}
+
+.teal-card {
+  background-color: antiquewhite;
+  padding-left: 20px;
+  border: 1px lightgrey solid;
+  border-left: 6px teal solid !important;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.teal-card h6 {
+  color: teal;
+}
+
+.sienna-card {
+  background-color: antiquewhite;
+  padding-left: 20px;
+  border: 1px lightgrey solid;
+  border-left: 6px sienna solid !important;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sienna-card h6 {
+  color: sienna;
+}
+
+.pendingStatusStyle {
+  color: red;
+}
+
+.completedStatusStyle {
+  color: teal;
+}
+
+.cancelledStatusStyle {
+  color: sienna;
+}
+
+.undergoingStatusStyle {
+  color: indigo;
+}

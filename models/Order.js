@@ -12,9 +12,9 @@ const OrderSchema = new Schema({
     orderId: {
         type: String
     },
-    orderDetails: {
+    orderDetails: [{
         type: String
-    },
+    }],
     customerEmail: {
         type: String
     },

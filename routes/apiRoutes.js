@@ -186,4 +186,10 @@ router.get('/getOrders', (req, res, next) => {
     Orders.find({}).then(data => res.json(data)).catch(next);
 });
 
+router.put('/updateStatus/:id/:status', (req, res, next) => {
+
+    Orders.findByIdAndUpdate(req.params.id, { "orderStatus": req.params.status }).then(data => res.json(data)).catch(next);
+
+});
+
 module.exports = router;
