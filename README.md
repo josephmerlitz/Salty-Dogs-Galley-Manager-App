@@ -6,6 +6,8 @@ View this app at https://salty-dogs-galley-manager.herokuapp.com/login.
 User Name: sdg.manager@hotmail.com
 Password: 1234567
 
+![Image description]()
+
 ## You can follow the below steps to install and run the app
 
 1. Rename the file **.env.example** to **.env**
