@@ -6,14 +6,19 @@ View this app at https://salty-dogs-galley-manager.herokuapp.com/login.
 User Name: sdg.manager@hotmail.com
 Password: 1234567
 
+### Login Page 
 ![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Login.png)
 
+### Dashboard
 ![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Dashboard.png)
 
+### Add New Item Page
 ![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Add.png)
 
+### Edit Exisitng Items Page
 ![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Edit.png)
 
+### Orders Management Page
 ![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Orders.png)
 
 ## You can follow the below steps to install and run the app
