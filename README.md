@@ -8,6 +8,14 @@ Password: 1234567
 
 ![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Login.png)
 
+![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Dashboard.png)
+
+![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Add.png)
+
+![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Edit.png)
+
+![Login Page](https://github.com/josephmerlitz/Salty-Dogs-Galley-Manager-App/blob/master/repo-images/Orders.png)
+
 ## You can follow the below steps to install and run the app
 
 1. Rename the file **.env.example** to **.env**
